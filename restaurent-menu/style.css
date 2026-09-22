@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(125, 157, 157);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu {
+    padding: 20px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.426);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: white;
+    border: 2px solid rgb(126, 130, 146);
+    border-radius: 10px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.items {
+    display: flex;
+
+    /* // CHANGE: allow 2 complete items per row */
+    flex-wrap: wrap;
+
+    /* // CHANGE: space between complete items */
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* // ADD: each food item contains text + image */
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    /* // CHANGE: 2 items fit in 700px */
+    width: 320px;
+}
+
+.menu-item {
+    text-align: left;
+
+    /* // ADD: text takes remaining space */
+    flex: 1;
+}
+
+h2 {
+    padding: 5px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+span {
+    font-size: 15px;
+    margin-left: 45px;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 10px;
+    font-size: small;
+}
+
+img {
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+
+    /* // ADD */
+    object-fit: cover;
+}
